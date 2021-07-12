@@ -6,8 +6,10 @@
   "scripts": {
     "codegen": "graph codegen --output-dir src/types/",
     "build": "graph build",
-    "create-local": "graph create sameepsi/quickswap --node http://18.220.65.11:8020/",
-    "deploy-local": "graph deploy sameepsi/quickswap --ipfs http://18.220.65.11:5001 --node http://18.220.65.11:8020/ --debug"
+    "create:polarfox:stag": "graph create sameepsi/quickswap --node http://18.220.65.11:8020/",
+    "deploy:polarfox:stag": "graph deploy sameepsi/quickswap --ipfs http://18.220.65.11:5001 --node http://18.220.65.11:8020/ --debug",
+    "create:polarfox:prod": "graph create sameepsi/quickswap --node http://3.142.134.9:8020",
+    "deploy:polarfox:prod": "graph deploy sameepsi/quickswap --ipfs http://3.137.181.49:5001 --node http://3.142.134.9:8020 --debug"
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "^0.16.0",
